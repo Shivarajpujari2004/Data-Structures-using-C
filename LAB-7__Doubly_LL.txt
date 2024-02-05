@@ -114,18 +114,6 @@ void displayList(struct Node* head)
     }
     printf("NULL\n");
 }
-void freeList(struct Node* head)
-{
-    struct Node* current = head;
-
-    struct Node* nextNode;
-    while (current)
-    {
-        nextNode = current->next;
-        free(current);
-        current = nextNode;
-    }
-}
 int main()
 {
     struct Node* head = NULL;
